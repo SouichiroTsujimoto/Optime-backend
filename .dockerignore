@@ -1,0 +1,28 @@
+# バイナリ
+main
+
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.swp
+*.swo
+
+# 環境設定
+.env
+.env.*
+
+# ドキュメント
+README.md
+*.md
+
+# デプロイ設定
+apprunner.yaml
+render.yaml
+
+# その他
+.DS_Store
+
