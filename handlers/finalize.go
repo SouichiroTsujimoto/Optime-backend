@@ -3,10 +3,10 @@ package handlers
 import (
 	"fmt"
 	"log"
+	"optime-backend/database"
+	"optime-backend/models"
 	"os"
 	"time"
-	"yotei-backend/database"
-	"yotei-backend/models"
 )
 
 func CheckDeadlinesAndFinalize() error {

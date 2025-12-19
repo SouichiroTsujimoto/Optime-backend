@@ -1,4 +1,4 @@
-module yotei-backend
+module optime-backend
 
 go 1.24.0
 

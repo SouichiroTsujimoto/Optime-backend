@@ -6,7 +6,7 @@ import (
 	"os"
 	"time"
 
-	"yotei-backend/models"
+	"optime-backend/models"
 
 	"gorm.io/driver/postgres"
 	"gorm.io/gorm"

@@ -6,8 +6,8 @@ import (
 	"os"
 	"time"
 
-	"yotei-backend/database"
-	"yotei-backend/models"
+	"optime-backend/database"
+	"optime-backend/models"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/google/uuid"

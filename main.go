@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"yotei-backend/database"
-	"yotei-backend/handlers"
+	"optime-backend/database"
+	"optime-backend/handlers"
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
@@ -49,7 +49,7 @@ func main() {
 	defer c.Stop()
 
 	app := fiber.New(fiber.Config{
-		AppName: "Yotei Backend API v1.0.0",
+		AppName: "Optime Backend API v1.0.0",
 	})
 
 	app.Use(logger.New())
@@ -61,7 +61,7 @@ func main() {
 
 	app.Get("/", func(c *fiber.Ctx) error {
 		return c.JSON(fiber.Map{
-			"message": "Yotei Backend API is running",
+			"message": "Optime Backend API is running",
 			"status":  "ok",
 		})
 	})
@@ -85,8 +85,8 @@ func main() {
 		port = "8080"
 	}
 
-	log.Printf("Server starting on port %s", port)
-	if err := app.Listen(":" + port); err != nil {
+	log.Printf("Server starting on 0.0.0.0:%s", port)
+	if err := app.Listen("0.0.0.0:" + port); err != nil {
 		log.Fatal("Failed to start server:", err)
 	}
 }
